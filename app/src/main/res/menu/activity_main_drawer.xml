@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/trips_svg"
+            android:title="Trips" />
+        <item
+            android:id="@+id/nav_trips"
+            android:icon="@drawable/trips_svg"
+            android:title="Trips" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_svg"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_alerts"
+            android:icon="@drawable/alerts_svg"
+            android:title="Alerts" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/help_svg"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/change_password"
+            android:title="Change Password" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_svg"
+            android:title="Logout" />
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="@string/menu_share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="@string/menu_send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

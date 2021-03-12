@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.TripsActivity"
+    tools:showIn="@layout/activity_trips">
+
+    <LinearLayout
+        android:id="@+id/placesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewStartPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center_vertical"
+            android:text="Start Point"/>
+
+        <ImageView
+            android:layout_toEndOf="@+id/textViewStartPoint"
+            android:layout_toStartOf="@+id/textViewEndPoint"
+            android:layout_width="match_parent"
+            android:src="@drawable/direction_curve_svg"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/textViewEndPoint"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Start Point"/>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/mapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/placesLayout"
+        android:layout_above="@+id/buttonsLayout"
+        android:layout_marginBottom="2dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="2dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/start_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="START"/>
+
+
+        <Button
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/stop_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="STOP"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
