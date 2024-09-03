@@ -68,5 +68,4 @@ public class AlertsActivity extends AppCompatActivity {
         recyclerLayoutAlerts.setItemAnimator(new DefaultItemAnimator());
         recyclerLayoutAlerts.setAdapter(mAdapter);
     }
-
 }
